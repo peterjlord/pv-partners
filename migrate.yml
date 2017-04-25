@@ -1,0 +1,41 @@
+id: basics
+label: Import articles
+migration_groups:
+  - ACME import
+
+source:
+  plugin: csv
+  path: '/home/pete/Sites/d8.peoplesvoicemedia.co.uk/modules/custom/pvm_partners/p.csv'
+  delimiter: ','
+  # Field enclosure. Double quotation marks (") by default.
+  enclosure: '"'
+  # The number of rows at the beginning which are not data.
+  header_row_count: 1
+  keys:
+    - Id2
+  # Here we identify the columns of interest in the source file. 
+  # Each numeric key is the 0-based index of the column. 
+  # For each column, the key below is the field name assigned to 
+  # the data on import, to be used in field mappings below. 
+  # The value is a user-friendly string for display by the 
+  # migration UI.
+  column_names:
+    0:
+      id: 'Nid'
+    1:
+      title: 'Name'
+    2:
+      body: 'Body'
+    3:
+      address: 'Address'
+    4:
+      postcode: 'Postcode'
+		5:
+      partner: 'Partner Type'
+    6:
+process:
+  name: title
+  field_description: body
+
+destination:
+  plugin: entity:partner"

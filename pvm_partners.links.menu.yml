@@ -1,0 +1,14 @@
+
+# Partner menu items definition
+entity.partner.collection:
+  title: 'Partner list'
+  route_name: entity.partner.collection
+  description: 'List Partner entities'
+  parent: system.admin_structure
+  weight: 100
+
+partner.admin.structure.settings:
+  title: Partner settings
+  description: 'Configure Partner entities'
+  route_name: partner.settings
+  parent: system.admin_structure

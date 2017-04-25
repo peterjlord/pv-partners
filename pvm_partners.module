@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains pvm_partners.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function pvm_partners_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the pvm_partners module.
+    case 'help.page.pvm_partners':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Peoples Voice Media Partners Entity') . '</p>';
+      return $output;
+
+    default:
+  }
+}

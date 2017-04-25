@@ -1,0 +1,5 @@
+name: PVM Partners
+type: module
+description: Peoples Voice Media Partners Entity
+core: 8.x
+package: Custom

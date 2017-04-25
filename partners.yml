@@ -1,0 +1,19 @@
+id: partners 
+migration_tags: null
+migration_group: null
+label: 'Partner migration from CSV'
+source:
+  plugin: csv
+	path: /home/pete/Sites/d8.peoplesvoicemedia.co.uk/modules/custom/pvm_partners/partners.csv
+  header_row_count: 1
+  keys:
+    - Nid 
+process:
+  name: Partner  
+  field_partner_type: Partner Type
+  field_description: Body 
+destination:
+  plugin: 'entity:partner'
+migration_dependencies:
+  required: {  }
+  optional: {  }

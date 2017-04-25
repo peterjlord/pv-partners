@@ -1,0 +1,27 @@
+# Partner routing definition
+partner.settings_tab:
+  route_name: partner.settings
+  title: 'Settings'
+  base_route: partner.settings
+
+entity.partner.canonical:
+  route_name: entity.partner.canonical
+  base_route: entity.partner.canonical
+  title: 'View'
+
+entity.partner.edit_form:
+  route_name: entity.partner.edit_form
+  base_route: entity.partner.canonical
+  title: 'Edit'
+
+entity.partner.version_history:
+  route_name: entity.partner.version_history
+  base_route: entity.partner.canonical
+  title: 'Revisions'
+
+entity.partner.delete_form:
+  route_name:  entity.partner.delete_form
+  base_route:  entity.partner.canonical
+  title: Delete
+  weight: 10
+

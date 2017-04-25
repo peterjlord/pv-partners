@@ -1,0 +1,33 @@
+add partner entities:
+  title: 'Create new Partner entities'
+
+administer partner entities:
+  title: 'Administer Partner entities'
+  description: 'Allow to access the administration form to configure Partner entities.'
+  restrict access: true
+
+delete partner entities:
+  title: 'Delete Partner entities'
+
+edit partner entities:
+  title: 'Edit Partner entities'
+
+access partner overview:
+  title: 'Access the Partner overview page'
+
+view published partner entities:
+  title: 'View published Partner entities'
+
+view unpublished partner entities:
+  title: 'View unpublished Partner entities'
+
+view all partner revisions:
+  title: 'View all Partner revisions'
+
+revert all partner revisions:
+  title: 'Revert all Partner revisions'
+  description: 'Role requires permission <em>view Partner revisions</em> and <em>edit rights</em> for partner entities in question or <em>administer partner entities</em>.'
+
+delete all partner revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Partner revisions</em> and <em>delete rights</em> for partner entities in question or <em>administer partner entities</em>.'
